@@ -50,6 +50,7 @@
         let
           pkgs = import nixpkgs {
             inherit system;
+            config.allowUnfree = true;
           };
           shell = shell-utils.myShell.${system};
           code = makeMyVSCode pkgs { };
