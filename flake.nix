@@ -13,11 +13,20 @@
     , shell-utils
     }:
     let
-      myVSCode = pkgs:
+      makeMyVSCode =
+        pkgs:
+        { extraSettings ? { }
+        , extraExtensions ? [ ]
+        }:
         let
+
+          # (string, set) -> string
+          appendAsJSON = string: json:
+            builtins.toJSON ((builtins.fromJSON string) // json);
+
           configuration = pkgs.writeTextFile {
             name = "settings";
-            text = builtins.readFile ./settings.json;
+            text = appendAsJSON (builtins.readFile ./settings.json) extraSettings;
             destination = "/share/settings.json";
           };
           app = pkgs.writeShellApplication {
@@ -33,25 +42,25 @@
             vscodeExtensions = with pkgs.vscode-extensions; [
               formulahendry.code-runner
               rust-lang.rust-analyzer
-            ];
+            ] ++ extraExtensions;
           };
         in
         app;
-
       installables = with flake-utils.lib; eachDefaultSystem (system:
         let
           pkgs = import nixpkgs {
             inherit system;
           };
           shell = shell-utils.myShell.${system};
-          code = myVSCode pkgs;
+          code = makeMyVSCode pkgs { };
         in
         {
+          myVSCode = makeMyVSCode pkgs { };
           packages.default = code;
           devShells.default = shell {
             packages = [ code ];
           };
         });
     in
-    installables // { app = myVSCode; };
+    installables // { inherit makeMyVSCode; };
 }

@@ -99,8 +99,8 @@
         "shell-utils": "shell-utils"
       },
       "locked": {
-        "lastModified": 1680232530,
-        "narHash": "sha256-gxUMRJD9rLpqgABslj379dqMaK+vmD1L4m7dT2wxgFA=",
+        "lastModified": 1680285850,
+        "narHash": "sha256-tQkGqB4eQmmCadWLcu2bqhLYDQZd8aOfdFyJU39Q2tc=",
         "path": "/Users/waltermoreira/repos/myvscode",
         "type": "path"
       },
