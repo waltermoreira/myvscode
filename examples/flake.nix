@@ -4,8 +4,7 @@
     nixpkgs.url = "github:nixos/nixpkgs";
     flake-utils.url = "github:numtide/flake-utils";
     shell-utils.url = "github:waltermoreira/shell-utils";
-    myvscode.url = "path:/Users/waltermoreira/repos/myvscode";
-    #    myvscode.url = "github:waltermoreira/myvscode";
+    myvscode.url = "github:waltermoreira/myvscode";
     rust-overlay = {
       url = "github:oxalica/rust-overlay";
       inputs = {
