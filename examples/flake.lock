@@ -99,14 +99,17 @@
         "shell-utils": "shell-utils"
       },
       "locked": {
-        "lastModified": 1680285850,
-        "narHash": "sha256-tQkGqB4eQmmCadWLcu2bqhLYDQZd8aOfdFyJU39Q2tc=",
-        "path": "/Users/waltermoreira/repos/myvscode",
-        "type": "path"
+        "lastModified": 1680287707,
+        "narHash": "sha256-3KHubb63WkBE2eoteVMFOLBjTPT/649UMEUbI/5pxx4=",
+        "owner": "waltermoreira",
+        "repo": "myvscode",
+        "rev": "3274ae609e86d6974f441cd4dfffd85e2f1d6052",
+        "type": "github"
       },
       "original": {
-        "path": "/Users/waltermoreira/repos/myvscode",
-        "type": "path"
+        "owner": "waltermoreira",
+        "repo": "myvscode",
+        "type": "github"
       }
     },
     "nixpkgs": {
