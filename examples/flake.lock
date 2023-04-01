@@ -99,11 +99,11 @@
         "shell-utils": "shell-utils"
       },
       "locked": {
-        "lastModified": 1680287707,
-        "narHash": "sha256-3KHubb63WkBE2eoteVMFOLBjTPT/649UMEUbI/5pxx4=",
+        "lastModified": 1680317123,
+        "narHash": "sha256-gfrj0dBYMSA32KddW4FD6RLI4gGxl0VSWVuz7kFaw8g=",
         "owner": "waltermoreira",
         "repo": "myvscode",
-        "rev": "3274ae609e86d6974f441cd4dfffd85e2f1d6052",
+        "rev": "79435d99c93dc64819b7ca06b31fd2d43b6014b5",
         "type": "github"
       },
       "original": {
