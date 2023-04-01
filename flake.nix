@@ -29,6 +29,7 @@
             text = appendAsJSON (builtins.readFile ./settings.json) extraSettings;
             destination = "/share/settings.json";
           };
+
           app = pkgs.writeShellApplication {
             name = "code";
             runtimeInputs = [ vscode ];
@@ -38,6 +39,7 @@
               ${vscode}/bin/code --user-data-dir ~/.myvscode
             '';
           };
+
           vscode = pkgs.vscode-with-extensions.override {
             vscodeExtensions = with pkgs.vscode-extensions; [
               formulahendry.code-runner
@@ -46,6 +48,7 @@
           };
         in
         app;
+
       installables = with flake-utils.lib; eachDefaultSystem (system:
         let
           pkgs = import nixpkgs {
@@ -56,7 +59,6 @@
           code = makeMyVSCode pkgs { };
         in
         {
-          myVSCode = makeMyVSCode pkgs { };
           packages.default = code;
           devShells.default = shell {
             packages = [ code ];

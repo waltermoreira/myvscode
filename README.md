@@ -17,7 +17,7 @@ and then execute `code`.
 
 ### Use VSCode in other flakes
 
-To compose this flake with others, follow the example in `./examples`.
+To compose this flake with others, follow the example in `examples/`.
 It contains a flake that uses the `myvscode` flake while tweaking the default
 configuration and adding an extension.
 
@@ -26,6 +26,8 @@ Run the example with:
 ```bash
 nix develop "github:waltermoreira/myvscode?dir=examples"
 ```
+
+and execute `code` in the environment.
 
 ## API
 
