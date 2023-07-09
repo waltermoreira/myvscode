@@ -90,11 +90,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1680150920,
-        "narHash": "sha256-l1rOMx3EuVPQm3kQueLs0928mvDQiTd+hd5Yja4C15s=",
+        "lastModified": 1683087891,
+        "narHash": "sha256-93cqgZ6iQJKYorhV5nwpc/EB1dggHUUYjNPiMFnRhcs=",
         "owner": "waltermoreira",
         "repo": "shell-utils",
-        "rev": "8b361506ab49ae2a72d33cf9557183d604429e0d",
+        "rev": "b5459dbc1cae29b4d7bfa3b3f3029866aa466383",
         "type": "github"
       },
       "original": {

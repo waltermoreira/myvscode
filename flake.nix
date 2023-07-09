@@ -32,11 +32,14 @@
 
           app = pkgs.writeShellApplication {
             name = "code";
-            runtimeInputs = [ vscode ];
+            runtimeInputs = [ vscode pkgs.rsync ];
             text = ''
-              mkdir -p ~/.myvscode/User
-              ln -sf ${configuration}/share/settings.json ~/.myvscode/User/settings.json
-              ${vscode}/bin/code --user-data-dir ~/.myvscode
+              BASE_DIR=$(pwd)/.myvscode
+              mkdir -p "$BASE_DIR"/User
+              [ ! -f "$BASE_DIR"/User/settings.json ] && \
+                rsync -a ${configuration}/share/settings.json "$BASE_DIR"/User/
+              chmod u+rw "$BASE_DIR"/User/settings.json
+              ${vscode}/bin/code --user-data-dir "$BASE_DIR"
             '';
           };
 
