@@ -99,11 +99,11 @@
         "shell-utils": "shell-utils"
       },
       "locked": {
-        "lastModified": 1680317123,
-        "narHash": "sha256-gfrj0dBYMSA32KddW4FD6RLI4gGxl0VSWVuz7kFaw8g=",
+        "lastModified": 1688928441,
+        "narHash": "sha256-6LPE7WA6paqypQyPJHGjq5WBT67Q8ndCy0lXXbLc76Y=",
         "owner": "waltermoreira",
         "repo": "myvscode",
-        "rev": "79435d99c93dc64819b7ca06b31fd2d43b6014b5",
+        "rev": "390f22843388283634e70359ff089d1d19034b0e",
         "type": "github"
       },
       "original": {
@@ -211,11 +211,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1680150920,
-        "narHash": "sha256-l1rOMx3EuVPQm3kQueLs0928mvDQiTd+hd5Yja4C15s=",
+        "lastModified": 1683087891,
+        "narHash": "sha256-93cqgZ6iQJKYorhV5nwpc/EB1dggHUUYjNPiMFnRhcs=",
         "owner": "waltermoreira",
         "repo": "shell-utils",
-        "rev": "8b361506ab49ae2a72d33cf9557183d604429e0d",
+        "rev": "b5459dbc1cae29b4d7bfa3b3f3029866aa466383",
         "type": "github"
       },
       "original": {
