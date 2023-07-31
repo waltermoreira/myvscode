@@ -47,6 +47,7 @@
             vscodeExtensions = with pkgs.vscode-extensions; [
               formulahendry.code-runner
               rust-lang.rust-analyzer
+              vscodevim.vim
             ] ++ extraExtensions;
           };
         in

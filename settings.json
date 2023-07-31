@@ -8,5 +8,17 @@
     "**/Thumbs.db": true,
     "**/*.olean": true
   },
-  "workbench.editor.showTabs": false
+  "workbench.editor.showTabs": false,
+  "vim.easymotion": true,
+  "vim.incsearch": true,
+  "vim.useSystemClipboard": true,
+  "vim.useCtrlKeys": true,
+  "vim.leader": "<space>",
+  "vim.easymotionMarkerForegroundColorOneChar": "#9cdcfe",
+  "vim.easymotionKeys": "hklyuiopnmqwertzxcvbasdgjf",
+  "vim.commandLineModeKeyBindings": [],
+  "vim.commandLineModeKeyBindingsNonRecursive": [],
+  "vim.foldfix": true,
+  "vim.replaceWithRegister": true,
+  "update.mode": "none"
 }
